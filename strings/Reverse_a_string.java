@@ -30,6 +30,10 @@ public class Reverse_a_string {
 	        System.out.println();
 	    }
 	
+	 
+	
+	 
+	 
 	public static void main(String[] args) {
 		
 		String s1 = "Junaid";
