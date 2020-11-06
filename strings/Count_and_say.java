@@ -20,6 +20,34 @@ public class Count_and_say {
 
 	static Scanner sc = new Scanner(System.in);
 	
+	
+	public static String countandSay(int n) {
+		
+		if(n==1) return "1";
+		
+		String s = countandSay(n-1);
+		
+		StringBuilder sc = new StringBuilder();
+		
+		for(int i=0;i<s.length();) {
+			int count=1,j=i+1;
+			while(j<s.length() && s.charAt(i)==s.charAt(j) ) {
+					count++;
+					j++;
+				}
+			sc.append(count).append(s.charAt(i));
+			i=j;
+		}
+		
+		return sc.toString();
+		
+		
+	}
+	
+	
+	
+	
+	
 	public static String countAndSay(int n) {
 	      
 	        String value = "1";
@@ -51,7 +79,7 @@ public class Count_and_say {
 	
 		System.out.println("Enter the number to count and say");
 		int n = sc.nextInt();
-		System.out.println(countAndSay(n));
+		System.out.println(countandSay(n));
 		
 		
 		
