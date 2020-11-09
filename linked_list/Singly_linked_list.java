@@ -42,6 +42,7 @@ public class Singly_linked_list {
 		return list;
 	}
 	
+	//iterative approach print
 	static void print(Singly_linked_list list) {
 		Node currNode = list.head;
 		System.out.print("Linked List data ");
@@ -53,6 +54,7 @@ public class Singly_linked_list {
 		System.out.println();
 		}
 	
+
 	
 	static void deleteAtPosition(Singly_linked_list list,int index) {
 		
