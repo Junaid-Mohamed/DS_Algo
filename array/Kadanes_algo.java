@@ -5,7 +5,7 @@ public class Kadanes_algo {
 	public static void main(String[] args) {
 		
 		int b[] = {-2,-3,4,-1,-2,1,5,-3};
-		int a[] = {-2,-3,4,-1};
+//		int a[] = {-2,-3,4,-1};
 		
 		int sum = 0, max = b[0];
 		
